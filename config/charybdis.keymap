@@ -88,112 +88,122 @@
     keymap {
         compatible = "zmk,keymap";
         BASE {
+            display-name = "Base";
             bindings = <
-               &none &none &none &none &none &none  &none &none &none &none &none &studio_unlock
-               &none &kp Q &kp W &kp E &kp R &kp T  &kp Y &kp U &kp I &kp O &kp P &none
-               &none &kp A &kp S &kp D &kp F &kp G  &kp H &kp J &kp K &kp L &none &none
-               &none &kp Z &kp X &kp C &kp V &kp B  &kp N &kp M &none &none &none &none
-                                 &none &none &none  &none &none
-                                       &none &none  &none
+               &kp ESC    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &studio_unlock
+               &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC
+               &kp LCTRL  &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp RETURN
+               &kp LSHIFT &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp PERIOD &kp SLASH  &kp RSHIFT
+                                                &td_cursor &mkp LCLK  &kp BSPC       &kp RETURN &kp SPACE
+                                                           &none      &kp LCMD       &none
             >;
         };
 
         NUM {
+            display-name = "Num";
             bindings = <
-               &none &none &none &none &none &none  &none &none &none &none &none &none
-               &none &kp Q &kp W &kp E &kp R &kp T  &kp Y &kp U &kp I &kp O &kp P &none
-               &none &kp A &kp S &kp D &kp F &kp G  &kp H &kp J &kp K &kp L &none &none
-               &none &kp Z &kp X &kp C &kp V &kp B  &kp N &kp M &none &none &none &none
-                                 &none &none &none  &none &none
-                                       &none &none  &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &kp ASTRK  &hm F7 N7  &hm F8 N8  &hm F9 N9  &none      &none
+               &none      &none      &none      &none      &none      &none          &kp MINUS  &hm F4 N4  &hm F5 N5  &hm F6 N6  &kp PLUS   &none
+               &none      &none      &none      &none      &kp BSPC   &kp SPACE      &td_equals &hm F1 N1  &hm F2 N2  &hm F3 N3  &kp SLASH  &none
+                                                &none      &trans     &trans         &kp DOT      &kp N0
+                                                           &trans     &trans         &trans
             >;
         };
 
         NAV {
+            display-name = "Nav";
             bindings = <
-               &none &none &none &none &none &none  &none &none &none &none &none &none
-               &none &kp Q &kp W &kp E &kp R &kp T  &kp Y &kp U &kp I &kp O &kp P &none
-               &none &kp A &kp S &kp D &kp F &kp G  &kp H &kp J &kp K &kp L &none &none
-               &none &kp Z &kp X &kp C &kp V &kp B  &kp N &kp M &none &none &none &none
-                                 &none &none &none  &none &none
-                                       &none &none  &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+                                                &none      &none      &none          &none      &none
+                                                           &none      &none          &none
             >;
         };
 
         SYM {
+            display-name = "Symbols";
             bindings = <
-               &none &none &none &none &none &none  &none &none &none &none &none &none
-               &none &kp Q &kp W &kp E &kp R &kp T  &kp Y &kp U &kp I &kp O &kp P &none
-               &none &kp A &kp S &kp D &kp F &kp G  &kp H &kp J &kp K &kp L &none &none
-               &none &kp Z &kp X &kp C &kp V &kp B  &kp N &kp M &none &none &none &none
-                                 &none &none &none  &none &none
-                                       &none &none  &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+                                                &none      &none      &none          &none      &none
+                                                           &none      &none          &none
             >;
         };
 
         GAME {
+            display-name = "Game";
             bindings = <
-               &none &none &none &none &none &none  &none &none &none &none &none &none
-               &none &kp Q &kp W &kp E &kp R &kp T  &kp Y &kp U &kp I &kp O &kp P &none
-               &none &kp A &kp S &kp D &kp F &kp G  &kp H &kp J &kp K &kp L &none &none
-               &none &kp Z &kp X &kp C &kp V &kp B  &kp N &kp M &none &none &none &none
-                                 &none &none &none  &none &none
-                                       &none &none  &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+                                                &none      &none      &none          &none      &none
+                                                           &none      &none          &none
             >;
         };
 
         PHOTOS {
+            display-name = "Photos";
             bindings = <
-               &none &none &none &none &none &none  &none &none &none &none &none &none
-               &none &kp Q &kp W &kp E &kp R &kp T  &kp Y &kp U &kp I &kp O &kp P &none
-               &none &kp A &kp S &kp D &kp F &kp G  &kp H &kp J &kp K &kp L &none &none
-               &none &kp Z &kp X &kp C &kp V &kp B  &kp N &kp M &none &none &none &none
-                                 &none &none &none  &none &none
-                                       &none &none  &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+                                                &none      &none      &none          &none      &none
+                                                           &none      &none          &none
             >;
         };
 
         EXTRAS {
+            display-name = "Extras";
             bindings = <
-               &none &none &none &none &none &none  &none &none &none &none &none &none
-               &none &kp Q &kp W &kp E &kp R &kp T  &kp Y &kp U &kp I &kp O &kp P &none
-               &none &kp A &kp S &kp D &kp F &kp G  &kp H &kp J &kp K &kp L &none &none
-               &none &kp Z &kp X &kp C &kp V &kp B  &kp N &kp M &none &none &none &none
-                                 &none &none &none  &none &none
-                                       &none &none  &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+                                                &none      &none      &none          &none      &none
+                                                           &none      &none          &none
             >;
         };
 
         MOUSE {
+            display-name = "Mouse";
             bindings = <
-               &none &none &none &none &none &none  &none &none &none &none &none &none
-               &none &kp Q &kp W &kp E &kp R &kp T  &kp Y &kp U &kp I &kp O &kp P &none
-               &none &kp A &kp S &kp D &kp F &kp G  &kp H &kp J &kp K &kp L &none &none
-               &none &kp Z &kp X &kp C &kp V &kp B  &kp N &kp M &none &none &none &none
-                                 &none &none &none  &none &none
-                                       &none &none  &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+                                                &none      &none      &none          &none      &none
+                                                           &none      &none          &none
             >;
         };
 
         SLOW {
+            display-name = "Slow";
             bindings = <
-               &none &none &none &none &none &none  &none &none &none &none &none &none
-               &none &kp Q &kp W &kp E &kp R &kp T  &kp Y &kp U &kp I &kp O &kp P &none
-               &none &kp A &kp S &kp D &kp F &kp G  &kp H &kp J &kp K &kp L &none &none
-               &none &kp Z &kp X &kp C &kp V &kp B  &kp N &kp M &none &none &none &none
-                                 &none &none &none  &none &none
-                                       &none &none  &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+                                                &none      &none      &none          &none      &none
+                                                           &none      &none          &none
             >;
         };
 
         SCROLL {
+            display-name = "Scroll";
             bindings = <
-               &none &none &none &none &none &none  &none &none &none &none &none &none
-               &none &kp Q &kp W &kp E &kp R &kp T  &kp Y &kp U &kp I &kp O &kp P &none
-               &none &kp A &kp S &kp D &kp F &kp G  &kp H &kp J &kp K &kp L &none &none
-               &none &kp Z &kp X &kp C &kp V &kp B  &kp N &kp M &none &none &none &none
-                                 &none &none &none  &none &none
-                                       &none &none  &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+               &none      &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+                                                &none      &none      &none          &none      &none
+                                                           &none      &none          &none
             >;
         };
     };

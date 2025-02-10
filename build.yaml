@@ -18,7 +18,7 @@
 #
 ---
 include:
-  # QWERTY BT
+  # charybdis QWERTY BT
   - board: nice_nano_v2
     shield: charybdis_left
     keymap: qwerty
@@ -30,6 +30,38 @@ include:
     format: bt
     artifact-name: charybdis_qwerty_right
     snippet: studio-rpc-usb-uart
+
+# FIXME: the type doesn't work yet
+#  # charybdis mini QWERTY BT
+#  - board: nice_nano_v2
+#    shield: charybdis_mini_left
+#    type:   mini
+#    keymap: qwerty
+#    format: bt
+#    artifact-name: charybdis_mini_qwerty_left
+#  - board: nice_nano_v2
+#    shield: charybdis_mini_right
+#    type:   mini
+#    keymap: qwerty
+#    format: bt
+#    artifact-name: charybdis_mini_qwerty_right
+#    snippet: studio-rpc-usb-uart
+
+# FIXME: the type doesn't work yet
+#  # charybdis nano QWERTY BT
+#  - board: nice_nano_v2
+#    shield: charybdis_nano_left
+#    type:   nano
+#    keymap: qwerty
+#    format: bt
+#    artifact-name: charybdis_nano_qwerty_left
+#  - board: nice_nano_v2
+#    shield: charybdis_nano_right
+#    type:   nano
+#    keymap: qwerty
+#    format: bt
+#    artifact-name: charybdis_nano_qwerty_right
+#    snippet: studio-rpc-usb-uart
 
 #  # Colemak DH BT
 #  - board: nice_nano_v2
